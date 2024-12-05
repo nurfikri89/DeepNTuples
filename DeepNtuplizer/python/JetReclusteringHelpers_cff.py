@@ -87,6 +87,7 @@ def SetupClusteringPFChargedJets(process,pfChgJetPtMin=5,genJetCollection="slimm
   if addPFChgJets:
     #
     # AK4 PF Chg jets
+    # Collection name: selectedUpdatedPatJetsAK4PFChg
     #
     addJetCollection(
       process,
@@ -120,6 +121,7 @@ def SetupClusteringPFChargedJets(process,pfChgJetPtMin=5,genJetCollection="slimm
 
   #
   # AK4 PF Chg CHS jets
+  # Collection name: selectedUpdatedPatJetsAK4PFChgCHS
   #
   if addPFChgJetsCHS:
     addJetCollection(
@@ -155,6 +157,7 @@ def SetupClusteringPFChargedJets(process,pfChgJetPtMin=5,genJetCollection="slimm
 
   #
   # AK4 PF Chg Puppi jets
+  # Collection name: selectedUpdatedPatJetsAK4PFChgPuppi
   #
   if addPFChgJetsPuppi:
     addJetCollection(
@@ -189,5 +192,6 @@ def SetupClusteringPFChargedJets(process,pfChgJetPtMin=5,genJetCollection="slimm
       btagInfos = btagInfos,
       explicitJTA = False
     )
+
 
   return process
